@@ -1,0 +1,25 @@
+.video-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    border: solid gray 2px;
+    padding: 1em;
+    .video-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .title {
+            font-size: 24px;
+            text-align: center
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+  
+}

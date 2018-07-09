@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  background-color: #cecece
+}
+
+html, body {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  display:inline-flex;
+}
+
+li { padding-left:1em; }
+
+.image {
+  width: 100vw;
+  height: 80vh;
+}
+
+.message {
+  font-size: 36px;
+  text-align: center
+}
+
+.group_grid {
+  display: grid;
+  grid: auto-flow dense / 30vw 30vw 30vw
+}
+
+.group_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
