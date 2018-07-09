@@ -3,7 +3,6 @@ import React, { PureComponent } from "react";
 import InputProvider, {Context} from "../provider/Provider";
 import SearchBar from "./Input";
 import VideoList from "./VideosList";
-import Modal from "./Modal";
 import "../scss/base.scss";
 
 // Render main structure of the app.
@@ -19,7 +18,6 @@ class App extends PureComponent {
             </div>
           )}
         </Context.Consumer>
-        <Modal />
       </InputProvider>
     );
   }
