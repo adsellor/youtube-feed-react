@@ -12,18 +12,16 @@ class ContextProvider extends PureComponent {
       part: "snippet",
       q: "",
       key: API_KEY,
-      type: "video"
+      type: "video",
+      maxResult: 30
     },
     videos: {},
     handleChange: textInput => {
       return this.setState({
         inputValue: textInput,
         queryParameters: {
-          part: "snippet",
-          q: textInput,
-          key: API_KEY,
-          maxResults: 30,
-          type: "video"
+          ...this.state.queryParameters,
+          q: textInput
         }
       });
     },
@@ -40,20 +38,11 @@ class ContextProvider extends PureComponent {
 
   render() {
     return (
-      <Context.Provider
-        value={{
-          state: this.state,
-          isModalOpen: this.state.isModalOpen,
-          toggleModal: this.state.toggleModal,
-          setModalSource: this.state.setModalSource,
-          changeLayout: this.state.changeLayout,
-          flex: this.state.flex
-        }}
-      >
+      <Context.Provider value={this.state}>
         {this.props.children}
       </Context.Provider>
     );
   }
 }
-export default ContextProvider;
-export { Context };
+export default ContextProvider
+export { Context }

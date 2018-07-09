@@ -1,4 +1,4 @@
-const queryData = (params) => {
+const queryData = params => {
     let requestURL = new URL("https://www.googleapis.com/youtube/v3/search")
     const getVideos = async () => {
         try {

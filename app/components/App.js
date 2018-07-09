@@ -6,7 +6,7 @@ import VideoList from "./VideosList";
 import Modal from "./Modal";
 import "../scss/base.scss";
 
-// Render Mmain structure of the app.
+// Render main structure of the app.
 class App extends PureComponent {
   render() {
     return (

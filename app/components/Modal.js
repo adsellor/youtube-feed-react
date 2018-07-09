@@ -15,7 +15,7 @@ const Modal = props => {
                   width="800"
                   height="500"
                   src={`${"http://www.youtube.com/embed/" +
-                    context.state.modalSource}`}
+                    context.modalSource}`}
                 />
               </div>
             </div>
